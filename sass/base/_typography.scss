@@ -1,13 +1,12 @@
 .heading-1 {
-  font-family: Poppins, sans-serif;
+  font-family: $poppins;
   font-size: 7rem;
-  font-weight: 400;
   letter-spacing: 4px;
   line-height: 1.0;
 }
 
 .heading-2 {
-  font-family: Nunito, sans-serif;
+  font-family: $nunito;
   font-size: 5.5rem;
   font-weight: 400;
   letter-spacing: 7px;
@@ -20,10 +19,17 @@
 }
 
 .heading-4 {
-  font-family: Nunito, sans-serif;
+  font-family: $nunito;
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-left: 16px;
   margin-top: 18px;
+}
+
+.handwrite {
+  color: #fff;
+  font-family: $tangerine;
+  font-size: 8rem;
+  line-height: 1.1;
 }

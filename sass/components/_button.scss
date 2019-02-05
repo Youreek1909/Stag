@@ -1,0 +1,25 @@
+.btn {
+
+  &,
+  &:link,
+  &:visited {
+  text-transform: uppercase;
+  font-family: Nunito, sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 5px;
+  padding: 0 .7rem;
+  border: 1px solid black;
+  border-radius: 0;
+
+  position: absolute;
+  left: 11%;
+  bottom: 10%;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+}

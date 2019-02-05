@@ -14,7 +14,6 @@ body {
 .heading-1 {
   font-family: Poppins, sans-serif;
   font-size: 7rem;
-  font-weight: 400;
   letter-spacing: 4px;
   line-height: 1.0; }
 
@@ -34,6 +33,12 @@ body {
   margin-left: 16px;
   margin-top: 18px; }
 
+.handwrite {
+  color: #fff;
+  font-family: Tangerine, sans-serif;
+  font-size: 8rem;
+  line-height: 1.1; }
+
 .figure-1 {
   width: 40%;
   height: 60%;
@@ -49,6 +54,22 @@ body {
   position: absolute;
   right: 9%;
   bottom: 15%; }
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  font-family: Nunito, sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 5px;
+  padding: 0 .7rem;
+  border: 1px solid black;
+  border-radius: 0;
+  position: absolute;
+  left: 11%;
+  bottom: 10%; }
+
+.btn:active, .btn:focus {
+  outline: none; }
 
 .logo {
   width: 8.5vw;
@@ -86,7 +107,8 @@ body {
   clip-path: polygon(0 12vh, 100% 0, 100% 98vh, 0 100%);
   margin-top: -3rem;
   position: relative;
-  padding: 4rem; }
+  padding: 4rem;
+  margin-bottom: 10rem; }
   .section-2__img {
     max-width: 70%;
     max-height: 65%;
@@ -101,3 +123,12 @@ body {
     width: 50%;
     position: absolute;
     top: 30%; }
+
+.section-3 {
+  background-image: url(../img/bouquet.jpg);
+  background-attachment: fixed;
+  margin-bottom: 100rem; }
+  .section-3__cit {
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem; }
