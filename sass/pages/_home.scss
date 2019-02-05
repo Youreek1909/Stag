@@ -1,0 +1,58 @@
+.section-1 {
+  width: 100vw;
+  height: 100vh;
+  padding: 4rem;
+
+  position: relative;
+
+  &__img {
+    max-width: 58%;
+    max-height: 68%;
+
+    position: absolute;
+    top: 25%;
+    left: 18%;
+
+    &-1 {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text {
+    width: 19rem;
+    position: absolute;
+    top: 45%;
+    left: 14%;
+  }
+}
+
+.section-2 {
+  background-color: #e9d4cf;
+  height: 110vh;
+  clip-path: polygon(0 12vh, 100% 0, 100% 98vh, 0 100%);
+  margin-top: -3rem;
+  position: relative;
+  padding: 4rem;
+
+  &__img {
+    max-width: 70%;
+    max-height: 65%;
+
+    position: absolute;
+    top: 16%;
+    left: 18%;
+    overflow: hidden;
+
+    &-1 {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text {
+    width: 50%;
+    position: absolute;
+    top: 30%;
+  }
+}
