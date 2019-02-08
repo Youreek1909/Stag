@@ -11,3 +11,69 @@
      width: 100%;
    }
 }
+
+.nav {
+  justify-content: space-between;
+
+  &-menu {
+    display: flex;
+
+    &__p:link,
+    &__p:visited {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  &__icon-big {
+    width: 2rem;
+    height: 2rem;
+    margin-top: -.2rem;
+    transition: all .2s;
+
+    &:hover {
+      transform: scale(1.6);
+    }
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: all .2s;
+
+
+    &-link:link,
+    &-link:visited {
+      text-decoration: none;
+    }
+
+    &:hover {
+      transform: scale(2);
+    }
+  }
+}
+
+.menu-social {
+  position: absolute;
+  top: 25%;
+
+  display: flex;
+  flex-direction: column;
+
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: all .2s;
+    margin-bottom: 2.5rem;
+
+    &-link:link,
+    &-link:visited {
+      text-decoration: none;
+    }
+
+    &:hover {
+      transform: scale(2);
+    }
+  }
+}

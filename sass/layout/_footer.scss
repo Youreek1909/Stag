@@ -15,7 +15,7 @@
 
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
   }
 
   &__logo {
@@ -23,6 +23,50 @@
 
     &-img {
     width: 100%;
+    }
+  }
+
+  &__newsletter {
+    display: flex;
+    align-items: center;
+
+    padding-left: 2rem;
+    border-left: 1px solid #eee;
+
+    &-link:link,
+    &-link:visited {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  &__icon-big {
+    width: 2rem;
+    height: 2rem;
+    margin-top: -.2rem;
+    margin-left: 2rem;
+    transition: all .2s;
+
+    &:hover {
+      transform: scale(1.6);
+    }
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: -.2rem;
+    margin-left: 2rem;
+    transition: all .2s;
+
+
+    &-link:link,
+    &-link:visited {
+      text-decoration: none;
+    }
+
+    &:hover {
+      transform: scale(2);
     }
   }
 }
