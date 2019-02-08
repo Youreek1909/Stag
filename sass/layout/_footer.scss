@@ -1,0 +1,28 @@
+.footer {
+  padding: 3rem;
+
+
+  &__sec-1 {
+    padding-bottom: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__sec-2 {
+    padding-top: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__logo {
+    width: 8%;
+
+    &-img {
+    width: 100%;
+    }
+  }
+}

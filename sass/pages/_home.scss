@@ -61,12 +61,88 @@
 .section-3 {
   background-image: url(../img/bouquet.jpg);
   background-attachment: fixed;
-  margin-bottom: 100rem; //test
+  margin-bottom: 10rem;
 
   &__cit {
     text-align: center;
     padding-top: 10rem;
     padding-bottom: 10rem;
-    
+
+  }
+}
+
+.section-4 {
+  padding: 0 3rem;
+
+  &__col-1 {
+    padding: 3rem;
+    text-align: center;
+  }
+
+  &__col-2 {
+    padding: 3rem;
+    text-align: center;
+  }
+
+  &__img1 {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+
+    &-1 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__img2 {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+
+    &-2 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.section-5 {
+  padding: 0 3rem;
+
+  &__col-1 {
+    padding: 3rem;
+    text-align: center;
+  }
+
+  &__col-2 {
+    padding: 3rem;
+    text-align: center;
+  }
+
+  &__img1 {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+
+    &-1 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__img2 {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+
+    &-2 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
