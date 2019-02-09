@@ -1,3 +1,4 @@
+// SECTION 1
 .section-1 {
   width: 100vw;
   height: 100vh;
@@ -27,6 +28,71 @@
   }
 }
 
+//SLIDE NUMBER (LEFT)
+.slide-number {
+  position: absolute;
+  top: 60%;
+  margin-left: -4rem;
+
+  &__90deg {
+    transform: rotate(-90deg);
+    font-family: $nunito;
+    font-size: 1.3rem;
+    font-weight: 700;
+
+    &::after {
+      content: "";
+      width: 4rem;
+      height: .1rem;
+      background-color: black;
+      display: inline-block;
+      margin-left: 4rem;
+    }
+  }
+}
+
+//SLIDE NUMBER (RIGHT)
+.slide-number__2 {
+  position: absolute;
+  top: 70%;
+  right: 13%;
+
+  &-list {
+    list-style: none;
+    margin-bottom: 0;
+  }
+
+  &-item {
+    display: inline;
+    font-size: .8rem;
+    font-weight: 600;
+    margin-right: .7rem;
+    color: #A9A9A9;
+
+    &-active {
+      color: black;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 4rem;
+        height: .1rem;
+        background-color: black;
+        display: inline-block;
+        transform: rotate(-90deg);
+
+        position: absolute;
+        top: 50px;
+        right: -14px;
+      }
+    }
+
+  }
+}
+
+
+
+// SECTION 2
 .section-2 {
   background-color: #e9d4cf;
   height: 110vh;
@@ -58,6 +124,7 @@
   }
 }
 
+// SECTION 3
 .section-3 {
   background-image: url(../img/bouquet.jpg);
   background-attachment: fixed;
@@ -71,6 +138,7 @@
   }
 }
 
+// SECTION 4
 .section-4 {
   padding: 0 3rem;
 
@@ -109,6 +177,7 @@
   }
 }
 
+// SECTION 5
 .section-5 {
   padding: 0 3rem;
 
