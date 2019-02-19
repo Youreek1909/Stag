@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700|Poppins:300,400,600,700|Tangerine:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/logo-white.png">
@@ -16,7 +17,7 @@
         <nav class="nav">
           <div class="nav-menu">
             <a href="#" class="nav__icon-link mr-5">
-              <svg class="nav__icon-big">
+              <svg class="nav__icon-big" id="icon-menu">
                 <use xlink:href="img/sprite.svg#icon-menu"></use>
               </svg>
             </a>
@@ -63,10 +64,10 @@
 
         <div class="slide-number__2">
           <ul class="slide-number__2-list">
-            <li class="slide-number__2-item">01</li>
-            <li class="slide-number__2-item slide-number__2-item-active">02</li>
-            <li class="slide-number__2-item">03</li>
-            <li class="slide-number__2-item">04</li>
+            <li class="slide-number__2-item item1 active slide-number__2-item-active">01</li>
+            <li class="slide-number__2-item item2">02</li>
+            <li class="slide-number__2-item item3">03</li>
+            <li class="slide-number__2-item item4">04</li>
           </ul>
         </div>
 
@@ -79,7 +80,26 @@
         <span class="figure-1"></span>
 
         <div class="section-1__img">
-          <img src="img/wed-3.jpg" alt="Wedding 1" class="section-1__img-1">
+          <!--carousel -->
+          <div id="myCarousel" class="carousel slide">
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/wedding-slide-1.jpg" alt="Wedding Photo 1">
+              </div>
+              <div class="carousel-item">
+                <img src="img/wed-1.jpg" alt="Wedding Photo 2">
+              </div>
+              <div class="carousel-item">
+                <img src="img/wedding-slide-3.jpeg" alt="Wedding Photo 3">
+              </div>
+              <div class="carousel-item">
+                <img src="img/wedding-slide-4.jpg" alt="Wedding Photo 4">
+              </div>
+            </div>
+
+          </div>
         </div>
 
         <div class="section-1__text">
@@ -112,7 +132,7 @@
       </section>
 
       <section class="section-4">
-        <div class="row">
+        <div class="row row-no-margin">
           <div class="col-md-5 section-4__col-1">
             <div class="section-4__img1">
               <img src="img/flowers.jpg" alt="Flowers" class="section-4__img1-1">
@@ -133,11 +153,11 @@
       </section>
 
       <section class="section-5 margin-top">
-        <div class="row">
+        <div class="row row-no-margin">
           <div class="col-md-7 section-5__col-1">
             <div class="vert-center">
               <div class="section-5__img1">
-                <img src="img/wed-3.jpg" alt="Flowers" class="section-5__img1-1">
+                <img src="img/wedding-slide-1.jpg" alt="Flowers" class="section-5__img1-1">
               </div>
               <h3 class="heading-3">Engagements</h3>
               <p class="handwrite">Hawaii Engagement</p>
@@ -199,5 +219,9 @@
 
       </footer>
 
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+      <script src="js/script.js"></script>
     </body>
 </html>

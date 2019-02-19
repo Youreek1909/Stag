@@ -3,6 +3,22 @@
   font-size: 7rem;
   letter-spacing: 4px;
   line-height: 1.0;
+
+  @include respond(laptop) {
+    font-size: 6rem;
+  }
+
+  @include respond(tablet) {
+    font-size: 5rem;
+  }
+
+  @include respond(mobile-large) {
+    font-size: 4rem;
+  }
+
+  @include respond(mobile-small) {
+    font-size: 3rem;
+  }
 }
 
 .heading-2 {
@@ -12,6 +28,22 @@
   letter-spacing: 7px;
   text-transform: uppercase;
   color: #fff;
+
+  @include respond(laptop) {
+    font-size: 4.5rem;
+  }
+
+  @include respond(tablet) {
+    font-size: 3.5rem;
+  }
+
+  @include respond(mobile-large) {
+    font-size: 2rem;
+  }
+
+  @include respond(mobile-small) {
+    font-size: 1.5rem;
+  }
 }
 
 .heading-3 {
@@ -23,6 +55,23 @@
   display: inline-block;
   padding: .5rem 1.5rem;
   margin-top: -2rem;
+
+  @include respond(laptop) {
+    font-size: 2.2rem;
+  }
+
+  @include respond(tablet) {
+    font-size: 2rem;
+  }
+
+  @include respond(mobile-large) {
+    font-size: 1.8rem;
+  }
+
+  @include respond(mobile-medium) {
+    font-size: 1.5rem;
+  }
+
 }
 
 .heading-4 {
@@ -30,19 +79,59 @@
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin-left: 16px;
-  margin-top: 18px;
+  margin-left: 1.6rem;
+  margin-top: 1.8rem;
+
+  @include respond(laptop) {
+    font-size: 1.1rem;
+    margin-top: 1.4rem;
+  }
+
+  @include respond(tablet) {
+    font-size: 1rem;
+  }
+
+  @include respond(mobile-large) {
+    font-size: .8rem;
+    margin-top: 1.2rem;
+  }
+
+  @include respond(mobile-small) {
+    font-size: .6rem;
+    margin-top: 1rem;
+  }
 }
 
 .handwrite {
-
-  &-white {
-    color: #fff;
-  }
   color: black;
   font-family: $tangerine;
   font-size: 8rem;
   line-height: 1.1;
+
+  @include respond(laptop) {
+    font-size: 6.5rem;
+  }
+
+  @include respond(tablet) {
+    font-size: 4.5rem;
+  }
+
+  @include respond(mobile-large) {
+    font-size: 4rem;
+  }
+
+  @include respond(mobile-medium) {
+    font-size: 3.5rem;
+  }
+
+
+  &-white {
+    color: #fff;
+
+    @include respond(mobile-small) {
+      font-size: 3rem;
+    }
+  }
 }
 
 .paragraph-1 {
@@ -52,6 +141,10 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 0;
+
+  @include respond(mobile-small) {
+    font-size: .7rem;
+  }
 }
 
 .paragraph-2 {

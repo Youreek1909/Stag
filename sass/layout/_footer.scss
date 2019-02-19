@@ -8,6 +8,10 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    @include respond(mobile-small) {
+      padding-bottom: 1rem;
+    }
   }
 
   &__sec-2 {
@@ -16,10 +20,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include respond(mobile-small) {
+      padding-bottom: 1rem;
+    }
   }
 
   &__logo {
     width: 8%;
+
+    @include respond(tablet) {
+      width: 10%;
+    }
+
+    @include respond(mobile-large) {
+      width: 12%;
+    }
+
+    @include respond(mobile-small) {
+      width: 15%;
+    }
 
     &-img {
     width: 100%;
@@ -47,6 +67,12 @@
     margin-left: 2rem;
     transition: all .2s;
 
+    @include respond(mobile-small) {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-top: -.4rem;
+    }
+
     &:hover {
       transform: scale(1.6);
     }
@@ -58,6 +84,11 @@
     margin-top: -.2rem;
     margin-left: 2rem;
     transition: all .2s;
+
+    @include respond(mobile-small) {
+      width: 1.3rem;
+      height: 1.3rem;
+    }
 
 
     &-link:link,
