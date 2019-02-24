@@ -56,3 +56,52 @@
         }
   }
 }
+
+//SLIDE NUMBER (LEFT)
+.slide-number {
+  position: absolute;
+  top: 60%;
+  margin-left: -4rem;
+
+  @include respond(laptop) {
+    top: 70%;
+  }
+
+  @include respond(mobile-large) {
+    display: none;
+  }
+
+  &__rel {
+    position: relative;
+    transition: all 2s;
+  }
+
+  &__90deg {
+    position: absolute;
+    margin-left: 4rem;
+    margin-top: 6rem;
+
+    transform: rotate(-90deg);
+    font-family: $nunito;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+}
+
+.line {
+  width: 4rem;
+  height: .1rem;
+  display: inline-block;
+  background-color: black;
+  margin-left: 4rem;
+  margin-top: .9rem;
+
+  position: absolute;
+}
+
+.hide {
+  display: none;
+}
+.checked {
+  display: block;
+}

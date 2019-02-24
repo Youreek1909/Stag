@@ -75,38 +75,6 @@
   overflow: hidden;
 }
 
-//SLIDE NUMBER (LEFT)
-.slide-number {
-  position: absolute;
-  top: 60%;
-  margin-left: -4rem;
-
-  @include respond(laptop) {
-    top: 70%;
-  }
-
-  @include respond(mobile-large) {
-    display: none;
-  }
-
-
-  &__90deg {
-    transform: rotate(-90deg);
-    font-family: $nunito;
-    font-size: 1.3rem;
-    font-weight: 700;
-
-    &::after {
-      content: "";
-      width: 4rem;
-      height: .1rem;
-      background-color: black;
-      display: inline-block;
-      margin-left: 4rem;
-    }
-  }
-} 
-
 
 
 ///////////////// SECTION 2
