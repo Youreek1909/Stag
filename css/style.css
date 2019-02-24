@@ -201,6 +201,51 @@ body {
   background-color: black;
   color: #e9d4cf; }
 
+.carousel-indicators {
+  margin: 0;
+  padding: 0;
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: 61%;
+  left: 108%; }
+  @media only screen and (max-width: 48em) {
+    .carousel-indicators {
+      left: 100%; } }
+  @media only screen and (max-width: 26.6em) {
+    .carousel-indicators {
+      top: 103%;
+      left: 65%; } }
+  .carousel-indicators li {
+    width: 2rem;
+    text-indent: 0;
+    margin-right: -3px;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #A9A9A9;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    transition: all .5s ease; }
+    .carousel-indicators li:hover {
+      color: black;
+      opacity: 1; }
+    .carousel-indicators li.active {
+      color: black; }
+      .carousel-indicators li.active::after {
+        content: "";
+        width: 4rem;
+        height: .1rem;
+        background-color: black;
+        display: inline-block;
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 50px;
+        margin-left: -25px; }
+        @media only screen and (max-width: 26.6em) {
+          .carousel-indicators li.active::after {
+            display: none; } }
+
 .footer {
   padding: 4rem; }
   .footer__sec-1 {
@@ -405,50 +450,6 @@ body {
       background-color: black;
       display: inline-block;
       margin-left: 4rem; }
-
-.carousel-indicators {
-  margin: 0;
-  padding: 0;
-  width: 10rem;
-  height: 10rem;
-  position: absolute;
-  top: 61%;
-  left: 108%; }
-  @media only screen and (max-width: 48em) {
-    .carousel-indicators {
-      left: 100%; } }
-  @media only screen and (max-width: 26.6em) {
-    .carousel-indicators {
-      top: 103%;
-      left: 65%; } }
-  .carousel-indicators li {
-    width: 2rem;
-    text-indent: 0;
-    margin-right: -3px;
-    font-size: .8rem;
-    font-weight: 600;
-    color: #A9A9A9;
-    cursor: pointer;
-    border: none;
-    transition: all 0.25s ease; }
-    .carousel-indicators li:hover {
-      color: black;
-      opacity: 1; }
-    .carousel-indicators li.active {
-      color: black; }
-      .carousel-indicators li.active::after {
-        content: "";
-        width: 4rem;
-        height: .1rem;
-        background-color: black;
-        display: inline-block;
-        transform: rotate(-90deg);
-        position: absolute;
-        top: 50px;
-        margin-left: -25px; }
-        @media only screen and (max-width: 26.6em) {
-          .carousel-indicators li.active::after {
-            display: none; } }
 
 .section-2 {
   background-color: #e9d4cf;

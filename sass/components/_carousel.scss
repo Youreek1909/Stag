@@ -1,0 +1,58 @@
+//slide-indicators
+.carousel-indicators {
+  margin: 0;
+  padding: 0;
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: 61%;
+  left: 108%;
+
+  @include respond(tablet) {
+    left: 100%;
+  }
+
+  @include respond(mobile-large) {
+    top: 103%;
+    left: 65%;
+  }
+
+  li {
+    width: 2rem;
+    text-indent: 0;
+    margin-right: -3px;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #A9A9A9;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    transition: all .5s ease;
+
+    &:hover {
+      color: black;
+      opacity: 1;
+    }
+
+      &.active {
+        color: black;
+
+        &::after {
+          content: "";
+          width: 4rem;
+          height: .1rem;
+          background-color: black;
+          display: inline-block;
+          transform: rotate(-90deg);
+
+          position: absolute;
+          top: 50px;
+          margin-left: -25px;
+
+          @include respond(mobile-large) {
+            display: none;
+          }
+          }
+        }
+  }
+}
